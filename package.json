@@ -1,15 +1,11 @@
 {
     "name": "quiz-master-api",
     "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
+    "description": "Fake API for quiz app",
     "scripts": {
-        "start": "json-server --watch datas.json --port 10000"
+        "start": "json-server datas.json --host 0.0.0.0 --port $PORT"
     },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
     "dependencies": {
-        "json-server": "^1.0.0-beta.3"
+        "json-server": "^0.17.3"
     }
 }
