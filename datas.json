@@ -10,7 +10,14 @@
             "img": "https://ui-avatars.com/api/?name=Admin&background=0069ff&color=fff"
         }
     ],
-    "contacts": [],
+    "contacts": [
+        {
+            "id": "2479",
+            "name": "Admin",
+            "email": "admin@gmail.com",
+            "message": "Hello World"
+        }
+    ],
     "quizzes": [
         {
             "id": "cd02",

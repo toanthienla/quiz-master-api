@@ -1,45 +1,61 @@
 # Quiz Master API
 
-This repository provides a simple JSON Server-based API for managing quiz data, including users and quizzes. Below is an example of the data structure in the provided `datas.json` file:
+A fake RESTful API built for the **FER202** course, designed to support the development of quiz-related applications. This project uses **[JSON Server](https://github.com/typicode/json-server)** to simulate API operations for users, contacts, and quizzes.
 
 ```json
 {
     "users": [
         {
-            "id": "1",
-            "fullName": "Justin Bieber",
-            "email": "justin.bieber@gmail.com",
-            "studentId": "ST123",
-            "username": "justinbieber",
-            "password": "justin123",
-            "img": "https://ui-avatars.com/api/?name=Justin+Biever&background=0069ff&color=fff"
+            "id": "user-01",
+            "fullName": "User 01",
+            "email": "user@example.com",
+            "studentId": "STU00001",
+            "username": "username123",
+            "password": "password123",
+            "img": "https://ui-avatars.com/api/?name=User&background=0069ff&color=fff"
         }
-        // ...
     ],
     "contacts": [
         {
-            "id": "1",
-            "name":,
-            "email",
-            "message":,
+            "id": "contact-01",
+            "name": "User 01",
+            "email": "contact@example.com",
+            "message": "This is a placeholder message."
         }
     ],
     "quizzes": [
         {
-            "id": 0,
-            "title": "React Trivia Challenge"
-            // ...
-        },
-        {
-            "id": 1,
-            "title": "Animal Kingdom Quiz"
-            // ...
-        },
-        {
-            "id": 2,
-            "title": "Math Genius Challenge"
-            // ...
-        },
+            "id": "quiz-001",
+            "title": "Sample Quiz Title",
+            "description": "This is a sample quiz description for placeholder purposes.",
+            "number_of_questions": 2,
+            "type": "sample-category",
+            "questions": [
+                {
+                    "question": "Sample question 1?",
+                    "options": {
+                        "A": "Option A",
+                        "B": "Option B",
+                        "C": "Option C",
+                        "D": "Option D"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "question": "Sample question 2?",
+                    "options": {
+                        "A": "Option A",
+                        "B": "Option B",
+                        "C": "Option C",
+                        "D": "Option D"
+                    },
+                    "correct_answer": "A"
+                }
+                // 👇 Add more questions here
+            ]
+        }
+
+        // 👇 Add more quizzes here
     ]
 }
 ```
